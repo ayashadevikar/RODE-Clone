@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/index.html"],
+  content: ["./dist/index.html"],
   theme: {
     colors: {
       'white': '#FFFFFF',
@@ -18,9 +18,7 @@ module.exports = {
     },
     
     extend: {
-      screens: {
-        'md': '640px',
-      },
+     
   },
   plugins: [],
 }

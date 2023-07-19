@@ -979,52 +979,18 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:relative {
-    position: relative;
-  }
-
-  .sm\:-top-\[4rem\] {
-    top: -4rem;
-  }
-
-  .sm\:left-\[2rem\] {
-    left: 2rem;
-  }
-
   .sm\:flex {
     display: flex;
   }
+}
 
+@media (min-width: 768px) {
   .md\:invisible {
     visibility: hidden;
   }
 
-  .md\:-left-\[30rem\] {
-    left: -30rem;
-  }
-
-  .md\:-left-\[35rem\] {
-    left: -35rem;
-  }
-
-  .md\:-left-\[34rem\] {
-    left: -34rem;
-  }
-
   .md\:-left-\[33rem\] {
     left: -33rem;
-  }
-
-  .md\:top-\[2rem\] {
-    top: 2rem;
-  }
-
-  .md\:top-\[1rem\] {
-    top: 1rem;
-  }
-
-  .md\:top-2 {
-    top: 0.5rem;
   }
 
   .md\:top-1 {
