@@ -6,32 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="output.css" rel="stylesheet">
     <title>Rode</title>
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-   
-
-
-</script>
 </head>
 <body>
 
-    <!-- mobile view responsive navbar -->
-    <div>
+    <!-- mobile view navbar -->
+    <div class="mobile-navbar md:hidden flex items-center justify-between px-4 mt-2">
         <i class="menu-button fa-solid fa-bars"></i>
-        <i class="fa-solid fa-location-dot"></i>
-        <span>EN</span>
-        <i class="fa-solid fa-chevron-down"></i>
+        <div class="-ml-16">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>EN</span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+       
         <img src="./assests/RODE_Logo.svg" class="h-5">
+        <i class="fa-solid fa-magnifying-glass"></i>
     </div>
   
-    <div class="flex justify-around mt-4 ">
-      <div class="icons items-center relative right-[5rem]">
+    <!-- laptop view navbar -->
+    <div class="hidden md:flex md:justify-around mt-4 ">
+      <div class="icons items-center">
         
         <i class="fa-solid fa-location-dot"></i>
        </div>
 
-        <div class="group inline-block relative md:-left-[33rem] -left-[17rem]">
-            <button class="dropbtn flex cursor-pointer inline-flex items-center">
+        <div class="group inline-block relative md:-left-[29rem] -left-[17rem]">
+            <button class="dropbtn flex cursor-pointer items-center">
                 <span>EN</span>
                 <i class="fa-solid fa-chevron-down"></i>
             </button>
@@ -59,16 +59,8 @@
        
 
    </div>
-    <!-- <script>
-   const button = document.querySelector('#menu-button');
-const menu = document.querySelector('#menu');
-
-
-button.addEventListener('click', () => {
- menu.classList.toggle('hidden');
-});
-   </script> -->
-      <div class="hidden sm:flex gap-x-2">
+   
+      <div class=" md:flex gap-x-2">
         <svg class="rodex-logo " data-v-49b37e2d="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 219.5 75" xml:space="preserve" height="16px" class="rodexLogo hasHoverEffect"><g data-v-49b37e2d="" class=""><polygon data-v-49b37e2d="" points="190.7,37.5 162,75 136.4,75 165.2,37.5 136.4,0 162,0 190.7,37.5" class="fillColor1"></polygon> <polygon data-v-49b37e2d="" points="194.9,32.1 219.5,0 193.9,0 182.1,15.4 194.9,32.1" class="fillColor1"></polygon> <polygon data-v-49b37e2d="" points="182.1,59.6 193.9,75 219.5,75 194.9,42.9 182.1,59.6" class="fillColor1"></polygon> <path data-v-49b37e2d="" d="M62.4,32.8c0.2,1.8,0.3,3.5,0.3,4.7c0,4.5-0.8,14.9-8.3,14.9c-3.4,0-5.4-2.2-6.6-5L62.4,32.8L62.4,32.8z
             M54.4,22.6c3.5,0,5.5,2.3,6.7,5.2L46.4,42.4c-0.3-1.9-0.3-3.6-0.3-4.9C46.1,33,46.9,22.6,54.4,22.6L54.4,22.6z M73.9,21.3
             l-3.1-3.1L66.9,22c-3.4-2.7-7.7-4.3-12.5-4.3c-11.2,0-19.9,8.7-19.9,19.8c0,4.8,1.6,9.1,4.4,12.5L35,53.8l3.1,3.1l3.8-3.8
@@ -97,10 +89,10 @@ button.addEventListener('click', () => {
 </div>
 <hr class="mt-2 bg-light-gray">
 
- <nav class="flex justify-around mt-7">
+ <nav class="flex justify-evenly mt-7">
 
        
-        <div class="rode-logo2 ">
+        <div class="rode-logo2 hidden md:block">
             <img src="./assests/RODE_Logo.svg" class="h-5">
            
          </div>
@@ -118,7 +110,7 @@ button.addEventListener('click', () => {
             </ul>
         </div>
 
-        <div class="search-icon ">
+        <div class="search-icon hidden md:block">
             <svg data-v-6f04f978="" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.4629 20.0231C15.6892 20.0231 19.9259 15.7646 19.9259 10.5115C19.9259 5.25846 15.6892 1 10.4629 
                 1C5.2367 1 1 5.25846 1 10.5115C1 15.7646 5.2367 20.0231 10.4629 20.0231Z" stroke="#484848" stroke-width="2" 
@@ -130,17 +122,46 @@ button.addEventListener('click', () => {
         
      </nav>
      
-    <div class="bg-cover bg-center bg-no-repeat mt-10 w-[105rem] h-[50rem]"  
-    style="background-image: url('./assests/StreamerX-Header-right.jpeg')">
+     <!-- mobile view -->
 
-        <div class="flex flex-col gap-y-4 relative left-[10rem] top-[20rem]">
+     <div class="md:hidden">
+        <img alt="streamer-x" class="img-fluid" data-src="https://edge.rode.com/images/page/1/modules/8063/StreamerX-Header-right-800x700-2679e99.jpg" src="https://edge.rode.com/images/page/1/modules/8063/StreamerX-Header-right-800x700-2679e99.jpg">
+        <div class="flex flex-col gap-y-8 justify-center items-center py-6">
+            <div class="flex flex-col gap-y-4 justify-center items-center">
+                <img src="https://edge.rode.com/images/page/1/modules/8063/STREAMER-X_Product-Logo_Red_01 (1).svg" alt="streamer-x" class="w-96">
+                <h1 class="text-2xl w-80 text-center">Pristine Audio, Incredible Video, Unmatched Control</h1>
+            </div>
+            
+            <div>
+                <p class="md:text-base w-80">The Streamer X is the world’s first audio 
+                    interface, video capture card and control surface integrated in one compact device, 
+                    making creating incredible content incredibly easy.</p>
+            </div>
+
+            <div class="flex items-center gap-x-8">
+                <span class="text-dark-gray font-bold">LEARN MORE <i class="fa-solid fa-chevron-right text-dark-gray"></i></span>
+                <button class="border rounded-xl px-4 py-2  text-white bg-black">BUY NOW</button>
+            </div>
+        </div>
+    
+    </div>
+     
+
+
+
+     <!-- laptop view -->
+
+    <div class="bg-cover bg-center bg-no-repeat hidden mt-10 w-[105rem] h-[50rem] "  
+        style="background-image: url('./assests/StreamerX-Header-right.jpeg')">
+
+        <div class="flex-wrap md:flex md:flex-col md:gap-y-4 md:relative md:left-[10rem] md:top-[20rem]">
             <div class="flex flex-col gap-y-4">
                 <img src="https://edge.rode.com/images/page/1/modules/8063/STREAMER-X_Product-Logo_Red_01 (1).svg" alt="streamer-x" class="w-96">
                 <h1 class="text-2xl w-96 text-center">Pristine Audio, Incredible Video, Unmatched Control</h1>
             </div>
             
             <div>
-                <p class="text-base w-[29%] text-center">The Streamer X is the world’s first audio 
+                <p class="flex-wrap md:text-base w-[29%] text-center">The Streamer X is the world’s first audio 
                     interface, video capture card and control surface integrated in one compact device, 
                     making creating incredible content incredibly easy.</p>
             </div>
@@ -154,15 +175,40 @@ button.addEventListener('click', () => {
        
      </div> 
 
+      <!-- mobile view -->
 
-     <div class="flex flex-col gap-y-4 bg-cover bg-center bg-no-repeat w-[95rem] h-[45rem]" 
+      <div class="md:hidden">
+          <img alt="duo-change-over" class="img-fluid " data-src="https://edge.rode.com/images/page/1/modules/8061/DUO-Change-over-01-800x700-527bfb9.jpg" src="https://edge.rode.com/images/page/1/modules/8061/DUO-Change-over-01-800x700-527bfb9.jpg">
+          <div class="bg-black py-6 text-white flex flex-col justify-center items-center">
+            <div class="flex flex-col gap-y-4 justify-center items-center">
+                <img  src="https://edge.rode.com/images/page/1/modules/8061/RODECasterDUO_PL_PI_02.svg" class="w-96" alt="duo-img"></img>
+                <h1 class="text-2xl w-60 text-center">The Ultimate Audio Solution For Creators, Miniaturised</h1>
+            </div>
+            
+            <div>
+                <p class="text-base w-[20.4rem] mt-4">The RØDECaster Duo is a compact and incredibly powerful audio production 
+                    solution for podcasters and content creators, integrating a huge array of professional studio equipment into one 
+                    streamlined workhorse.</p>
+            </div>
+
+            
+            <div class="flex items-center gap-x-8 mt-8">
+                <span class="text-dark-gray  font-bold">LEARN MORE <i class="fa-solid fa-chevron-right text-dark-gray"></i></span>
+                <button class="border rounded-xl px-4 py-2 bg-white text-black">BUY NOW</button>
+            </div>
+        </div>
+        </div>
+      
+        
+ <!-- laptop view -->
+
+     <div class="hidden md:flex flex-col gap-y-4 bg-cover bg-center bg-no-repeat w-[95rem] h-[45rem]" 
      style="background-image: url('./assests/DUO-Change.jpeg')">
 
        
-
         <div class="relative top-60 left-[800px] text-white">
             <div class="flex flex-col gap-y-4">
-                <img  src="https://edge.rode.com/images/page/1/modules/8061/RODECasterDUO_PL_PI_02.svg" class="w-96" alt="duo-img"></img>
+                <img src="https://edge.rode.com/images/page/1/modules/8061/RODECasterDUO_PL_PI_02.svg" class="hidden md:block w-96 " alt="duo-img"></img>
                 <h1 class="text-2xl w-96 text-center">The Ultimate Audio Solution For Creators, Miniaturised</h1>
             </div>
             
@@ -182,7 +228,38 @@ button.addEventListener('click', () => {
 
         <!-- Backpack Image -->
 
-     <div class="flex flex-col gap-y-4 bg-cover bg-center bg-no-repeat w-[95rem] h-[45rem]" 
+        <!-- mobile view -->
+
+     <div class="md:hidden">
+        <img alt="backpack" class="img-fluid" data-src="https://edge.rode.com/images/page/1/modules/7785/rode-rcp-backpack-insitu-city-web-banner-6406x2336-rgb-800x700-1eb1e2ca.jpg" src="https://edge.rode.com/images/page/1/modules/7785/rode-rcp-backpack-insitu-city-web-banner-6406x2336-rgb-800x700-1eb1e2ca.jpg">
+       
+        <div class="flex flex-col justify-center items-center gap-y-8 py-6 bg-black text-white">
+            <div class="flex flex-col gap-y-4 justify-center items-center">
+                <img src="https://edge.rode.com/images/page/1/modules/7785/backpack_PL_PI_02.svg" alt="backpack" class="w-96">
+                <h1 class="text-2xl w-80 text-center">Custom-designed for the RØDECaster Series</h1>
+            </div>
+            
+            <div>
+                <p class="text-base w-80 ">A rugged, spacious and luxurious backpack purpose-built to safely carry your 
+                    RØDECaster Pro or Pro II, microphones, studio arms, laptops and other accessories – perfect for when you need to
+                     take your studio on the road.</p>
+                    
+            </div>
+
+            <div class="flex items-center gap-x-8">
+                <span class="text-dark-gray font-bold">LEARN MORE <i class="fa-solid fa-chevron-right text-dark-gray"></i></span>
+                <button class="border rounded-xl px-4 py-2 bg-white text-black">BUY NOW</button>
+            </div>
+        </div>
+       
+       
+    
+    </div>
+
+
+        <!-- laptop view -->
+
+     <div class="hidden md:flex flex-col gap-y-4 bg-cover bg-center bg-no-repeat w-[95rem] h-[45rem]" 
              style="background-image: url('./assests/rode-rcp-backpack.jpeg')">
 
         
@@ -211,7 +288,37 @@ button.addEventListener('click', () => {
 
 
      <!-- Podmic Image -->
-     <div class="flex flex-col gap-y-4 bg-cover bg-center bg-no-repeat w-[95rem] h-[40rem]" style="background-image: url('./assests/rode-pod-mic.jpeg')">
+
+   
+
+     <!-- mobile view -->
+   <div class="md:hidden">
+    <img alt="podmic" class="img-fluid" data-src="https://edge.rode.com/images/page/1/modules/8062/rode-pod-mic-usb-home-header-11614x4234-rgb-800x700-e81a8b9.jpg" src="https://edge.rode.com/images/page/1/modules/8062/rode-pod-mic-usb-home-header-11614x4234-rgb-800x700-e81a8b9.jpg">
+    
+    <div class="flex flex-col justify-center gap-y-8 py-6 items-center">
+        <div class="flex flex-col gap-y-4 justify-center items-center">
+            <img src="https://edge.rode.com/images/page/1/modules/8062/PODMIC USB_PL_P_02.svg"  class="w-[500px]" >
+            <h1 class="text-2xl w-80 text-center">Be Ready When Creativity Calls</h1>
+        </div>
+        
+        <div>
+            <p class="text-base w-80 text-dark-gray">The PodMic USB is an ultra-versatile dynamic microphone
+                 with both an XLR and USB output, making podcasting, streaming, gaming, and other content creation 
+                 a breeze – whether you’re recording with an interface, or directly into a computer, smartphone or 
+                 tablet.</p>
+        </div>
+
+        <div class="flex items-center gap-x-8 ">
+            <span class="text-dark-gray font-bold">LEARN MORE <i class="fa-solid fa-chevron-right text-dark-gray"></i></span>
+            <button class="border rounded-xl px-4 py-2 bg-black text-white">BUY NOW</button>
+        </div>
+
+    </div>
+   </div>
+
+
+     <!-- laptop view -->
+     <div class="hidden md:flex flex-col gap-y-4 bg-cover bg-center bg-no-repeat w-[95rem] h-[40rem]" style="background-image: url('./assests/rode-pod-mic.jpeg')">
        
 
         <div class="relative top-40 left-[800px] text-white">
@@ -237,7 +344,36 @@ button.addEventListener('click', () => {
     </div> 
 
     <!-- selfie Image -->
-    <div class="flex flex-col gap-y-4 bg-cover bg-center bg-no-repeat w-[95rem] h-[40rem]" style="background-image: url('./assests/mobile-sefie.jpeg')">
+
+    <!-- mobile view -->
+
+    <div class="md:hidden">
+        <img alt="" class="img-fluid" data-src="https://edge.rode.com/images/page/1/modules/7728/rode-wireless-me-insitu-pastel-livingroom-mobile-sefie-with-iPhone-sc21-6040x2200-rgb-800x700-b24a05e.jpg" src="https://edge.rode.com/images/page/1/modules/7728/rode-wireless-me-insitu-pastel-livingroom-mobile-sefie-with-iPhone-sc21-6040x2200-rgb-800x700-b24a05e.jpg">
+    
+        <div class="flex flex-col justify-center items-center gap-y-6 py-6">
+            <div class="flex flex-col gap-y-4 justify-center items-center">
+                <img src="https://edge.rode.com/images/page/1/modules/7728/WIME_PL_P_01 (2).svg" alt="wireless" class="w-96">
+                <h1 class="text-2xl w-96 text-center">Wireless Audio Made Easy</h1>
+            </div>
+            
+            <div>
+                <p class="text-base w-[22rem]">The Wireless ME is an ultra-compact wireless microphone
+                     system that makes recording professional audio effortless – the perfect companion for content 
+                     creation, interviewing, reporting, presenting, filmmaking and much more.</p>
+            </div>
+
+            <div class="flex items-center gap-x-8 ">
+                <span class="text-dark-gray font-bold">LEARN MORE <i class="fa-solid fa-chevron-right text-dark-gray"></i></span>
+                <button class="border rounded-xl px-4 py-2 bg-black text-white">BUY NOW</button>
+            </div>
+
+        </div>
+       
+    </div>
+
+
+   <!-- laptop view  -->
+    <div class="hidden md:flex flex-col gap-y-4 bg-cover bg-center bg-no-repeat w-[95rem] h-[40rem]" style="background-image: url('./assests/mobile-sefie.jpeg')">
        
 
         <div class="relative left-[10rem] top-[10rem] ">
@@ -262,7 +398,37 @@ button.addEventListener('click', () => {
     </div> 
 
     <!-- Microphone Studio Image -->
-    <div class="flex flex-col gap-y-4 bg-cover bg-center bg-no-repeat w-[95rem] h-[40rem]" style="background-image: url('./assests/rode-nsilver-home-studio.jpeg')">
+
+    <!-- mobile view -->
+    <div class="md:hidden">
+
+        <img alt="Microphone" class="img-fluid" data-src="https://edge.rode.com/images/page/1/modules/7347/rode-nt1-silver-home-studio-profile-webbanner-13473x4912-rgb-800x700-cf59c9f.jpg" src="https://edge.rode.com/images/page/1/modules/7347/rode-nt1-silver-home-studio-profile-webbanner-13473x4912-rgb-800x700-cf59c9f.jpg">
+        
+        <div class="flex flex-col justify-center items-center py-6 gap-y-8 bg-black text-white">
+            <div class="flex flex-col gap-y-4 justify-center items-center">
+                <img  src="https://edge.rode.com/images/page/1/modules/7347/nt1-5th-gen-generic-PL_PI_01.svg" alt="microphone-studio" class="w-96">
+                
+                <h1 class="text-2xl w-80 text-center">The Ultimate Studio Microphone</h1>
+            </div>
+            
+            <div>
+                <p class="text-base w-80">The NT1 5th Generation fuses the classic sound of the iconic NT1 
+                    with cutting-edge technology – a true studio workhorse with XLR and USB connectivity, 32-bit float recording, 
+                    advanced DSP, and more.</p>
+            </div>
+
+            <div class="flex items-center gap-x-8 ">
+                <span class="text-dark-gray font-bold">LEARN MORE <i class="fa-solid fa-chevron-right text-dark-gray"></i></span>
+                <button class="border rounded-xl px-4 py-2 bg-white text-black">BUY NOW</button>
+            </div>
+
+        </div>
+       
+    
+    </div>
+
+    <!-- laptop view -->
+    <div class="hidden md:flex flex-col gap-y-4 bg-cover bg-center bg-no-repeat w-[95rem] h-[40rem]" style="background-image: url('./assests/rode-nsilver-home-studio.jpeg')">
        
 
         <div class="relative top-40 left-[800px] text-white">
@@ -289,7 +455,33 @@ button.addEventListener('click', () => {
 
     <!-- Headphone Image -->
 
-    <div class="flex flex-col gap-y-4 bg-cover bg-center bg-no-repeat w-[95rem] h-[40rem]" style="background-image: url('./assests/headset.jpeg')">
+    <!-- mobile view -->
+
+    <div class="md:hidden">
+        <img alt="" class="img-fluid" data-src="https://edge.rode.com/images/page/1/modules/7160/rode-nth100m-home-header-800x700-rgb.jpg" src="https://edge.rode.com/images/page/1/modules/7160/rode-nth100m-home-header-800x700-rgb.jpg">
+        <div class="flex flex-col gap-y-8 py-6 justify-center items-center bg-black text-white">
+            <div class="flex flex-col gap-y-4 justify-center items-center">
+                <img src="https://edge.rode.com/images/page/1/modules/7160/NTH-100M_PL_PI_02.svg" alt="nth" class="w-96"> 
+                <h1 class="text-2xl w-80 text-center">Hear and Be Heard With Incredible Audio</h1>
+            </div>
+            
+            <div>
+                <p class="text-base w-80 ">The NTH-100M is a professional over-ear headset that combines the 
+                    exceptional sonic performance and comfort of the award-winning NTH-100 headphones with a broadcast-quality 
+                    headset microphone.</p>
+            </div>
+
+            <div class="flex items-center gap-x-8 ">
+                <span class="text-dark-gray font-bold">LEARN MORE <i class="fa-solid fa-chevron-right text-dark-gray"></i></span>
+                <button class="border rounded-xl px-4 py-2 bg-white text-black ">BUY NOW</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- laptop view -->
+
+    <div class="hidden md:flex flex-col gap-y-4 bg-cover bg-center bg-no-repeat w-[95rem] h-[40rem]" style="background-image: url('./assests/headset.jpeg')">
        
 
         <div class="relative left-[10rem] top-[10rem] text-white">
@@ -318,21 +510,20 @@ button.addEventListener('click', () => {
 
      <div class="latest-blogs mt-8">
        
-            <h1 class="text-center text-3xl font-bold text-dark-orange">Latest From The RØDE Blog</h1>
+            <h1 class="text-center text-4xl md:text-3xl  font-bold text-dark-orange">Latest From The RØDE Blog</h1>
           
-
-        <div class="flex gap-x-8 justify-center items-center mt-20">
+        <div class="md:flex gap-x-8 justify-center items-center mt-20">
             <div class="flex flex-col gap-y-6 items-center">
-                <h2 class="text-2xl w-[27rem] text-center">Introducing the PodMic USB Ultra-versatile Dynamic Mic with XLR and USB Outputs</h2>
-                <img class="w-[35rem]" src="./assests/rode-pod-mic-usb-computer-scene-8192x5464-rgb-5330-580x509-e0f016a.jpg" alt="">
-                <p class="text-lg w-[34rem] text-center">The PodMic USB is the only microphone you’ll need – it captures a rich, broadcast voice whether 
+                <h2 class="text-2xl w-[18rem] md:w-[27rem] text-center">Introducing the PodMic USB Ultra-versatile Dynamic Mic with XLR and USB Outputs</h2>
+                <img class="w-[20rem] md:w-[35rem]" src="./assests/rode-pod-mic-usb-computer-scene-8192x5464-rgb-5330-580x509-e0f016a.jpg" alt="">
+                <p class="text-lg w-[21rem] md:w-[34rem] text-center">The PodMic USB is the only microphone you’ll need – it captures a rich, broadcast voice whether 
                     you’re on a computer, mobile or using pro audio equipment.</p>
                 <button class="border rounded-xl px-4 py-2  bg-dark-orange text-white hover:bg-white hover:text-dark-orange hover:border-dark-orange">Learn More</button>
             </div>
 
-           <div class="flex flex-col gap-y-6 items-center">
-               <h2 class="text-2xl w-[27rem] text-center">Introducing the Streamer X Audio Interface, Video Capture Card and Control Surface</h2>
-               <img class="w-[35rem]" src="./assests/rode-streamer-x-on-black-macro-dials-4-2023-4746x3167-rgb-580x509-f124952.jpg" alt="">
+           <div class="flex flex-col gap-y-6 items-center mt-4">
+               <h2 class="text-2xl w-80 md:w-[27rem] text-center">Introducing the Streamer X Audio Interface, Video Capture Card and Control Surface</h2>
+               <img class="w-[20rem] md:w-[35rem]" src="./assests/rode-streamer-x-on-black-macro-dials-4-2023-4746x3167-rgb-580x509-f124952.jpg" alt="">
                <p class="text-lg w-[20rem] text-center">The Streamer X is the world’s first video capture card, audio interface and control surface all in one.</p>
                <button class="border rounded-xl px-4 py-2  bg-dark-orange text-white hover:bg-white hover:text-dark-orange hover:border-dark-orange">Learn More</button>
            </div>
@@ -342,20 +533,20 @@ button.addEventListener('click', () => {
      
 
   
-     <div class="flex gap-x-8 justify-center items-center mt-20">
+     <div class="md:flex gap-x-8 justify-center items-center mt-20">
         <div class="flex flex-col gap-y-6 items-center">
-            <h2 class="text-2xl w-[30rem] text-center">How to Connect A Wireless Microphone to the RØDECaster Series Consoles</h2>
-             <img class="w-[35rem] mt-7" src="./assests/Wireless Update 02 1920x1080-FA-580x509-886e527.jpg" alt="">
-            <p class="text-lg w-[27rem] text-center">We walk you through the process of pairing your wireless microphone to a 
+            <h2 class="text-2xl w-60 md:w-[30rem] text-center">How to Connect A Wireless Microphone to the RØDECaster Series Consoles</h2>
+             <img class="w-[20rem] md:w-[35rem] mt-7" src="./assests/Wireless Update 02 1920x1080-FA-580x509-886e527.jpg" alt="">
+            <p class="text-lg w-52 md:w-[27rem] text-center">We walk you through the process of pairing your wireless microphone to a 
               RØDECaster series console, including the RØDECaster Pro II and RØDECaster Duo.</p>
                 <button class="border rounded-xl px-4 py-2 bg-dark-orange text-white hover:bg-white hover:text-dark-orange hover:border-dark-orange">Learn More</button>
       </div>
 
 
-        <div class="flex flex-col gap-y-6 items-center">
-             <h2 class="text-2xl w-[30rem] text-center">Introducing New Firmware for the RØDECaster Pro II Unlocking Wireless Mic Connectivity</h2>
-             <img class="w-[35rem]" src="./assests/Wireless Update 02 1920x1080-FA-580x509-f97e414.jpg" alt="">
-             <p class="text-lg w-[27rem] text-center ">You can now connect the Wireless GO II and Wireless ME to the RØDECaster Pro II! Download the latest 
+        <div class="flex flex-col gap-y-6 items-center mt-4">
+             <h2 class="text-2xl w-60 md:w-[30rem] text-center">Introducing New Firmware for the RØDECaster Pro II Unlocking Wireless Mic Connectivity</h2>
+             <img class="w-[20rem] md:w-[35rem]" src="./assests/Wireless Update 02 1920x1080-FA-580x509-f97e414.jpg" alt="">
+             <p class="text-lg w-60 md:w-[27rem] text-center ">You can now connect the Wireless GO II and Wireless ME to the RØDECaster Pro II! Download the latest 
                beta firmware to access this awesome new feature.</p>
              <button class="border rounded-xl px-4 py-2 bg-dark-orange text-white hover:bg-white hover:text-dark-orange hover:border-dark-orange">Learn More</button>
         </div>
@@ -367,16 +558,45 @@ button.addEventListener('click', () => {
     
 
     <!-- Explore The RØDE Range -->
-    
-    <div class="mt-20 text-center">
-        <div>
-            <h1 class="text-3xl font-bold mb-8 text-light-gray">Explore The RØDE Range</h1>
+
+    <!-- mobile view -->
+    <div class="md:hidden flex flex-col gap-y-4 mt-4">
+        <div class="relative">
+            <img class="img-fluid" alt="Qries" src="https://edge.rode.com/images%2Fpage%2F1%2Fmodules%2F5357%2Fmicrophones-module-1200x300-rgb.png">
+            <h1 class="absolute top-9 left-28 text-white text-2xl">MICROPHONES</h1>
         </div>
 
-        <div class="flex flex-col gap-y-6">
 
-             <div class="microphone-img bg-center bg-no-repeat  h-[18rem] grid justify-items-center" style="background-image: url('https://edge.rode.com/images%2Fpage%2F1%2Fmodules%2F5357%2Fmicrophones-module-1200x300-rgb.png')">
-                <img class="w-[80rem]  self-center" src="https://edge.rode.com/images%2Fpage%2F1%2Fmodules%2F5364%2Fmicrophones-text.svg">
+        <div class="relative">
+            <img class="img-fluid" alt="Qries" src="https://rode.com/assets/images%2Fpage%2F1%2Fmodules%2F5359%2Finterfaces-module-2022-1200x300-rgb.jpg">
+            <h1 class="absolute top-9 left-28 text-white text-2xl">INTERFACES & MIXES</h1>
+        </div>
+
+        <div class="relative">
+            <img class="img-fluid" alt="Qries" src="https://edge.rode.com/images%2Fpage%2F1%2Fmodules%2F5361%2Fsoftware-module-2021-1200x300-rgb.png">
+            <h1 class="absolute top-9 left-28 text-white text-2xl">SOFTWARE</h1>
+        </div>
+
+        <div class="relative">
+            <img class="img-fluid" alt="Qries" src="https://edge.rode.com/images%2Fpage%2F1%2Fmodules%2F5370%2Faccessories-module-2021-1200x300-rgb.png">
+            <h1 class="absolute top-9 left-28 text-white text-2xl">ACCESSORIES</h1>
+        </div>
+      </div>
+
+
+    <!-- laptop view -->
+    
+    <div class="hidden md:mt-20 text-center">
+        <div>
+            <h1 class="text-4xl md:text-3xl font-bold mb-8 text-light-gray">Explore The RØDE Range</h1>
+        </div>
+
+        <div class="flex flex-col gap-y-6 justify-center items-center">
+
+           
+
+             <div class="microphone-img bg-center bg-no-repeat h-[18rem] grid justify-items-center" style="background-image: url('https://edge.rode.com/images%2Fpage%2F1%2Fmodules%2F5357%2Fmicrophones-module-1200x300-rgb.png')">
+                <img class="w-[80rem] self-center" src="https://edge.rode.com/images%2Fpage%2F1%2Fmodules%2F5364%2Fmicrophones-text.svg">
               </div>
            
         
@@ -409,9 +629,51 @@ button.addEventListener('click', () => {
 
      <hr class="h-px my-8 mt-20 bg-light-gray border-0">
 
+     <!-- footer -->
+
+     <!-- mobile view -->
+     <div class="md:hidden">
+        <p class="text-2xl font-bold w-[18rem] text-center">Subscribe to our latest news and offers</p>
+        <button class="border rounded-3xl px-8 py-2 text-white bg-dark-orange hover:bg-white hover:text-dark-orange hover:border-dark-orange">Subscribe</button>
+    </div>
+
+    <div>
+        <img alt="RØDE" title="RØDE" width="142" height="85" src="https://cdn.rode.com/website/images/logo/RODE_logo_142x85_desktop_light_mode.svg" class="logo img-fluid light-mode mx-auto">
+    </div>
+
+    <div class="flex gap-x-4">
+        <p>Privacy Policy</p>
+        <span class="border-r-2 h-7"></span>
+        <p>Terms & Conditions</p>
+    </div>
+
+    <div class="flex gap-x-4 mb-12">
+        <i class="fa-brands fa-facebook animate__animated animate__jello "></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-twitch"></i>
+        <i class="fa-brands fa-discord"></i>
+        <svg data-v-49b37e2d="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 219.5 75" xml:space="preserve" height="24px" class="rodexLogo"><g data-v-49b37e2d="" class="currentColor"><polygon data-v-49b37e2d="" points="190.7,37.5 162,75 136.4,75 165.2,37.5 136.4,0 162,0 190.7,37.5" class="fillColor1"></polygon> <polygon data-v-49b37e2d="" points="194.9,32.1 219.5,0 193.9,0 182.1,15.4 194.9,32.1" class="fillColor1"></polygon> <polygon data-v-49b37e2d="" points="182.1,59.6 193.9,75 219.5,75 194.9,42.9 182.1,59.6" class="fillColor1"></polygon> <path data-v-49b37e2d="" d="M62.4,32.8c0.2,1.8,0.3,3.5,0.3,4.7c0,4.5-0.8,14.9-8.3,14.9c-3.4,0-5.4-2.2-6.6-5L62.4,32.8L62.4,32.8z
+            M54.4,22.6c3.5,0,5.5,2.3,6.7,5.2L46.4,42.4c-0.3-1.9-0.3-3.6-0.3-4.9C46.1,33,46.9,22.6,54.4,22.6L54.4,22.6z M73.9,21.3
+            l-3.1-3.1L66.9,22c-3.4-2.7-7.7-4.3-12.5-4.3c-11.2,0-19.9,8.7-19.9,19.8c0,4.8,1.6,9.1,4.4,12.5L35,53.8l3.1,3.1l3.8-3.8
+            c3.4,2.6,7.6,4.1,12.4,4.1c11.2,0,19.9-8.7,19.9-19.8c0-4.7-1.6-9-4.3-12.4L73.9,21.3L73.9,21.3z M103,36.7c0,7-2.8,14.4-10.6,14.4
+            h-3.8V23.9H92C99.6,23.9,103,30.3,103,36.7L103,36.7z M94.5,18.7H77.8v37.5h18.3c11.2,0,18.5-7.1,18.5-18.1
+            C114.6,26.9,106.1,18.7,94.5,18.7L94.5,18.7z M142.6,50.3v6h-24.9V18.7h25v6h-13.7V34h12.3v6h-12.3v10.3H142.6L142.6,50.3z
+            M11.3,24.2h3.3c3.6,0,6.1,2.5,6.1,6.2c0,5.3-3,6.3-8.2,6.3h-1.2V24.2L11.3,24.2z M32.3,30.2c0-7.1-7-11.4-13.5-11.4H0v37.5h11.3
+            V38.1L20,56l0.1,0.3h12.8L24,40.5C29.2,39,32.3,35.1,32.3,30.2L32.3,30.2z" class="fillColor2 "></path></g></svg>
+    </div>
+
+    <div>
+                        <span>© 2023 RØDE All Rights Reserved.</span> 
+                    </div>
+
+
+     <!-- laptop view -->
        <footer>
             
-        <div class="mt-20 flex flex-row justify-center gap-x-20">
+        <div class="hidden md:flex flex-row justify-center gap-x-20 mt-20 ">
               <div class="rode-img">
                 <img alt="RØDE" title="RØDE" width="142" height="85" src="https://cdn.rode.com/website/images/logo/RODE_logo_142x85_desktop_light_mode.svg" class="logo img-fluid light-mode mx-auto">
               </div>
@@ -452,9 +714,9 @@ button.addEventListener('click', () => {
                </div>
 
             </div>
-               <hr class="h-px my-8 mt-8 bg-light-gray border-0">
+               <hr class="hidden md:h-px my-8 mt-8 bg-light-gray border-0">
 
-                <div class="flex justify-evenly">
+                <div class="hidden md:flex justify-evenly">
 
                     <div>
                         <span>© 2023 RØDE All Rights Reserved.</span> 
