@@ -11,17 +11,19 @@
 <body>
 
     <!-- mobile view navbar -->
-    <div class="mobile-navbar md:hidden flex items-center justify-between px-4 mt-2">
-        <i class="menu-button fa-solid fa-bars"></i>
-        <div class="-ml-16">
+    <div class="mobile-navbar md:hidden flex items-center justify-between px-6 mt-2">
+        <i class="menu-button fa-solid fa-bars h-4"></i>
+        <div class="-ml-20 ">
             <i class="fa-solid fa-location-dot"></i>
             <span>EN</span>
             <i class="fa-solid fa-chevron-down"></i>
         </div>
        
-        <img src="./assests/RODE_Logo.svg" class="h-5">
+        <img src="./assests/RODE_Logo.svg" class="h-5 -ml-10">
         <i class="fa-solid fa-magnifying-glass"></i>
     </div>
+
+    
   
     <!-- laptop view navbar -->
     <div class="hidden md:flex md:justify-around mt-4 ">
@@ -36,15 +38,15 @@
                 <i class="fa-solid fa-chevron-down"></i>
             </button>
             <ul class="menu absolute hidden group-hover:block w-[10rem] border-2 bg-white rounded-md text-zinc-500 ">
-              <li class="bg-light-gray px-4">EN</li>
-              <li class="hover:bg-zinc-100 px-4"><a class="block" href="#" >CN</a></li>
-              <li class="hover:bg-zinc-100 px-4">DE</li>
-              <li class="hover:bg-zinc-100 px-4">FR</li>
-              <li class="hover:bg-zinc-100 px-4">KO</li>
-              <li class="hover:bg-zinc-100 px-4">JA</li>
-              <li class="hover:bg-zinc-100 px-4">IT</li>
-              <li class="hover:bg-zinc-100 px-4">ES</li>
-              <li class="w-[5rem] hover:bg-zinc-100">EN-US</li>
+              <li class="bg-gray px-4">EN</li>
+              <li class="hover:bg-light-gray px-4"><a class="block" href="#" >CN</a></li>
+              <li class="hover:bg-light-gray px-4">DE</li>
+              <li class="hover:bg-light-gray px-4">FR</li>
+              <li class="hover:bg-light-gray px-4">KO</li>
+              <li class="hover:bg-light-gray px-4">JA</li>
+              <li class="hover:bg-light-gray px-4">IT</li>
+              <li class="hover:bg-light-gray px-4">ES</li>
+              <li class="w-[5rem] hover:bg-light-gray px-4">EN-US</li>
             </ul>
         <div>
 
@@ -89,7 +91,7 @@
 </div>
 <hr class="mt-2 bg-light-gray">
 
- <nav class="flex justify-evenly mt-7">
+ <nav class="flex justify-evenly mt-7 pb-4">
 
        
         <div class="rode-logo2 hidden md:block">
@@ -151,7 +153,7 @@
 
      <!-- laptop view -->
 
-    <div class="bg-cover bg-center bg-no-repeat hidden mt-10 w-[105rem] h-[50rem] "  
+    <div class="bg-cover bg-center bg-no-repeat hidden mt-10 w-[105rem] h-[50rem]"  
         style="background-image: url('./assests/StreamerX-Header-right.jpeg')">
 
         <div class="flex-wrap md:flex md:flex-col md:gap-y-4 md:relative md:left-[10rem] md:top-[20rem]">
@@ -560,7 +562,7 @@
     <!-- Explore The RØDE Range -->
 
     <!-- mobile view -->
-    <div class="md:hidden flex flex-col gap-y-4 mt-4">
+    <div class="md:hidden flex flex-col gap-y-4 mt-4 px-4">
         <div class="relative">
             <img class="img-fluid" alt="Qries" src="https://edge.rode.com/images%2Fpage%2F1%2Fmodules%2F5357%2Fmicrophones-module-1200x300-rgb.png">
             <h1 class="absolute top-9 left-28 text-white text-2xl">MICROPHONES</h1>
@@ -632,43 +634,117 @@
      <!-- footer -->
 
      <!-- mobile view -->
-     <div class="md:hidden">
-        <p class="text-2xl font-bold w-[18rem] text-center">Subscribe to our latest news and offers</p>
-        <button class="border rounded-3xl px-8 py-2 text-white bg-dark-orange hover:bg-white hover:text-dark-orange hover:border-dark-orange">Subscribe</button>
-    </div>
+     <footer class="md:hidden pb-28 px-4">
+
+        <div>
+            <hr>
+            <details class="py-4">
+                <summary class="pb-2 font-bold cursor-pointer">Products</summary>
+                <ul class="space-y-2 ml-10">
+                    <li>Microphones</li>
+                    <li>Headphones</li>
+                    <li>Interfaces and Mixers</li>
+                    <li>Accessories</li>
+                    <li>Software</li>
+                    <li>Apparel</li>
+                </ul>
+            </details>
+            <hr>
+        </div>
+
+        <div>
+            <hr>
+            <details class="py-4">
+                <summary class="pb-2 font-bold cursor-pointer">Support</summary>
+                <ul class="space-y-2 ml-10">
+                    <li>Contact RODE</li>
+                    <li>Service Center</li>
+                    <li>Warranty</li>
+                    <li>Where to Buy</li>
+                </ul>
+            </details>
+            <hr>
+        </div>
+        <div>
+            <hr>
+            <details class="py-4">
+                <summary class="pb-2 font-bold cursor-pointer">Company</summary>
+                <ul class="space-y-2 ml-10">
+                    <li>About RODE</li>
+                    <li>News and Info</li>
+                    <li>Job and Opportunities</li>
+                </ul>
+            </details>
+            <hr>
+        </div>
+        <div>
+            <hr>
+            <details class="py-4">
+                <summary class="pb-2 font-bold cursor-pointer">Account</summary>
+                <ul class="space-y-2 ml-10">
+                    <li>Manage Your Account</li>
+                    <li>Create Account</li>
+                </ul>
+            </details>
+            <hr>
+        </div>              
+      
+        <hr class="h-px w-72 bg-light-gray border-0">
+
+        <div class="flex flex-col gap-y-4 justify-center items-center">
+           
+
+            
+        <div class="flex flex-col justify-center items-center gap-y-2"> 
+              <p class="text-2xl font-bold w-[18rem] text-center">Subscribe to our latest news and offers</p>
+              <button class="border rounded-3xl px-8 py-2 text-white bg-dark-orange hover:bg-white hover:text-dark-orange hover:border-dark-orange">Subscribe</button>
+               
+           </div>
+      
+           <hr class="h-px w-72 bg-light-gray border-0">
+    
 
     <div>
-        <img alt="RØDE" title="RØDE" width="142" height="85" src="https://cdn.rode.com/website/images/logo/RODE_logo_142x85_desktop_light_mode.svg" class="logo img-fluid light-mode mx-auto">
+        <img alt="RØDE" title="RØDE" src="https://cdn.rode.com/website/images/logo/RODE_logo_142x85_desktop_light_mode.svg" class="logo img-fluid light-mode mx-auto h-12">
+         
     </div>
 
-    <div class="flex gap-x-4">
-        <p>Privacy Policy</p>
-        <span class="border-r-2 h-7"></span>
-        <p>Terms & Conditions</p>
-    </div>
+        <div class="flex gap-x-4">
+            <p>Privacy Policy</p>
+            <span class="border-r-2 h-7"></span>
+            <p>Terms & Conditions</p>
+         </div>
 
-    <div class="flex gap-x-4 mb-12">
-        <i class="fa-brands fa-facebook animate__animated animate__jello "></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-tiktok"></i>
-        <i class="fa-brands fa-twitch"></i>
-        <i class="fa-brands fa-discord"></i>
-        <svg data-v-49b37e2d="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 219.5 75" xml:space="preserve" height="24px" class="rodexLogo"><g data-v-49b37e2d="" class="currentColor"><polygon data-v-49b37e2d="" points="190.7,37.5 162,75 136.4,75 165.2,37.5 136.4,0 162,0 190.7,37.5" class="fillColor1"></polygon> <polygon data-v-49b37e2d="" points="194.9,32.1 219.5,0 193.9,0 182.1,15.4 194.9,32.1" class="fillColor1"></polygon> <polygon data-v-49b37e2d="" points="182.1,59.6 193.9,75 219.5,75 194.9,42.9 182.1,59.6" class="fillColor1"></polygon> <path data-v-49b37e2d="" d="M62.4,32.8c0.2,1.8,0.3,3.5,0.3,4.7c0,4.5-0.8,14.9-8.3,14.9c-3.4,0-5.4-2.2-6.6-5L62.4,32.8L62.4,32.8z
+        <div class="flex gap-x-4 mb-12">
+             <i class="fa-brands fa-facebook"></i>
+             <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-tiktok"></i>
+             <i class="fa-brands fa-twitch"></i>
+            <i class="fa-brands fa-discord"></i>
+       
+       </div>
+
+       <div class="-mt-11">
+          <svg data-v-49b37e2d="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 219.5 75" xml:space="preserve" height="24px" class="rodexLogo"><g data-v-49b37e2d="" class="currentColor"><polygon data-v-49b37e2d="" points="190.7,37.5 162,75 136.4,75 165.2,37.5 136.4,0 162,0 190.7,37.5" class="fillColor1"></polygon> <polygon data-v-49b37e2d="" points="194.9,32.1 219.5,0 193.9,0 182.1,15.4 194.9,32.1" class="fillColor1"></polygon> <polygon data-v-49b37e2d="" points="182.1,59.6 193.9,75 219.5,75 194.9,42.9 182.1,59.6" class="fillColor1"></polygon> <path data-v-49b37e2d="" d="M62.4,32.8c0.2,1.8,0.3,3.5,0.3,4.7c0,4.5-0.8,14.9-8.3,14.9c-3.4,0-5.4-2.2-6.6-5L62.4,32.8L62.4,32.8z
             M54.4,22.6c3.5,0,5.5,2.3,6.7,5.2L46.4,42.4c-0.3-1.9-0.3-3.6-0.3-4.9C46.1,33,46.9,22.6,54.4,22.6L54.4,22.6z M73.9,21.3
             l-3.1-3.1L66.9,22c-3.4-2.7-7.7-4.3-12.5-4.3c-11.2,0-19.9,8.7-19.9,19.8c0,4.8,1.6,9.1,4.4,12.5L35,53.8l3.1,3.1l3.8-3.8
             c3.4,2.6,7.6,4.1,12.4,4.1c11.2,0,19.9-8.7,19.9-19.8c0-4.7-1.6-9-4.3-12.4L73.9,21.3L73.9,21.3z M103,36.7c0,7-2.8,14.4-10.6,14.4
             h-3.8V23.9H92C99.6,23.9,103,30.3,103,36.7L103,36.7z M94.5,18.7H77.8v37.5h18.3c11.2,0,18.5-7.1,18.5-18.1
             C114.6,26.9,106.1,18.7,94.5,18.7L94.5,18.7z M142.6,50.3v6h-24.9V18.7h25v6h-13.7V34h12.3v6h-12.3v10.3H142.6L142.6,50.3z
             M11.3,24.2h3.3c3.6,0,6.1,2.5,6.1,6.2c0,5.3-3,6.3-8.2,6.3h-1.2V24.2L11.3,24.2z M32.3,30.2c0-7.1-7-11.4-13.5-11.4H0v37.5h11.3
-            V38.1L20,56l0.1,0.3h12.8L24,40.5C29.2,39,32.3,35.1,32.3,30.2L32.3,30.2z" class="fillColor2 "></path></g></svg>
+            V38.1L20,56l0.1,0.3h12.8L24,40.5C29.2,39,32.3,35.1,32.3,30.2L32.3,30.2z" class="fillColor2"></path></g></svg>
+        </div>
+
+        <div>
+            <span>© 2023 RØDE All Rights Reserved.</span> 
+        </div>
+        
+       
     </div>
 
-    <div>
-                        <span>© 2023 RØDE All Rights Reserved.</span> 
-                    </div>
-
+    </footer>
 
      <!-- laptop view -->
        <footer>
@@ -678,8 +754,9 @@
                 <img alt="RØDE" title="RØDE" width="142" height="85" src="https://cdn.rode.com/website/images/logo/RODE_logo_142x85_desktop_light_mode.svg" class="logo img-fluid light-mode mx-auto">
               </div>
 
+             
 
-               <ul class="products-list flex flex-col gap-y-2">
+               <ul class="group-hover:block products-list flex flex-col gap-y-2">
                    <h1 class="text-xl text-black font-bold">Products</h1>
                    <li>Microphones</li>
                    <li>Headphones</li>
@@ -729,7 +806,7 @@
                     </div>
 
                     <div class="flex gap-x-4 mb-12">
-                        <i class="fa-brands fa-facebook animate__animated animate__jello "></i>
+                        <i class="fa-brands fa-facebook"></i>
                         <i class="fa-brands fa-twitter"></i>
                         <i class="fa-brands fa-instagram"></i>
                         <i class="fa-brands fa-youtube"></i>

@@ -8,11 +8,11 @@ module.exports = {
       'light-gray': '#808080',
       'black': '#000000',
       'dark-gray': '#484848',
-      // #6c757d
-      //
+      'gray': '#6c757d',
+      
     //  #343a40
     
-      'gray': '#6c757',
+      
      
             
     },
