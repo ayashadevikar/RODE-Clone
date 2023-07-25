@@ -985,6 +985,10 @@ video {
   padding-bottom: 1rem;
 }
 
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1081,8 +1085,8 @@ video {
     position: relative;
   }
 
-  .md\:-left-\[29rem\] {
-    left: -29rem;
+  .md\:-left-\[28\.5rem\] {
+    left: -28.5rem;
   }
 
   .md\:left-\[10rem\] {
@@ -1107,10 +1111,6 @@ video {
 
   .md\:hidden {
     display: none;
-  }
-
-  .md\:h-px {
-    height: 1px;
   }
 
   .md\:w-\[27rem\] {
