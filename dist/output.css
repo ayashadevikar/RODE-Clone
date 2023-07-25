@@ -59,8 +59,6 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
-  overflow-x: hidden;
   /* 1 */
   line-height: inherit;
   /* 2 */
@@ -576,6 +574,10 @@ video {
   top: 11rem;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -868,6 +870,10 @@ video {
   align-self: center;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .rounded-3xl {
   border-radius: 1.5rem;
 }
@@ -931,6 +937,10 @@ video {
 
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .px-4 {
